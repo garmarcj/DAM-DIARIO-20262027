@@ -174,3 +174,4 @@ azahartech/
 ║ [ ] Comprobación técnica de puesto completada (terminal y GitHub).     ║
 ║ [ ] Ruta de carpetas anotada para el inicio de las clases.             ║
 ╚════════════════════════════════════════════════════════════════════════╝
+```
