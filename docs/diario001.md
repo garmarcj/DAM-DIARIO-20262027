@@ -115,6 +115,9 @@ Todo sistema informático responde a este esquema de tres fases consecutivas:
     * *Procesamiento:* comprobar si la hora es posterior a las 08:05 h y calcular los minutos de retraso.
     * *Salida:* mensaje en pantalla («Puntual» en verde o «Retraso» en naranja) + registro en la base de datos.
 
+Exact Instructions Challenge - video de Josh Darnit
+https://www.youtube.com/watch?v=FN2RM-CHkuI
+
 ---
 
 ### 3. Actividad 3. Descomposición en papel (15 min)
@@ -142,3 +145,4 @@ Todo sistema informático responde a este esquema de tres fases consecutivas:
 ║ [ ] Cuestionario de diagnóstico completado por todo el grupo.          ║
 ║ [ ] Asimilado el concepto de algoritmo y el modelo IPO.                ║                                                                        ║
 ╚════════════════════════════════════════════════════════════════════════╝
+```
