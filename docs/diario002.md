@@ -35,10 +35,10 @@ layout: page
 
 | Equipo de trabajo | Integrantes asignados | Identificador Git oficial |
 | :--- | :--- | :---: |
-| **Equipo 01** | [Estudiante 1] · [Estudiante 2] · [Estudiante 3] | `equipo-01` |
-| **Equipo 02** | [Estudiante 4] · [Estudiante 5] · [Estudiante 6] | `equipo-02` |
-| **Equipo 03** | [Estudiante 7] · [Estudiante 8] · [Estudiante 9] | `equipo-03` |
-| **Equipo 04** | [Estudiante 10] · [Estudiante 11] · [Estudiante 12] | `equipo-04` |
+| **Equipo 01** | [Estudiante 1] · [Estudiante 2] · [Estudiante 3] · [Estudiante 4] | `equipo-01` |
+| **Equipo 02** | [Estudiante 5] · [Estudiante 6] · [Estudiante 7] · [Estudiante 8] | `equipo-02` |
+| **Equipo 03** | [Estudiante 9] · [Estudiante 10] · [Estudiante 11] · [Estudiante 12] | `equipo-03` |
+| **Equipo 04** | [Estudiante 13] · [Estudiante 14] · [Estudiante 15] · [Estudiante 16] | `equipo-04` |
 
 > 🎙️ **Nota.** Al proyectar la lista de equipos, resolveremos incidencias puntuales y confirmaremos que todo el grupo conoce su identificador.
 
@@ -51,18 +51,19 @@ layout: page
 ┌────────────────────────────────────────────────────────────────────────┐
 │                   CHECKLIST TÉCNICO EN EL PUESTO                       │
 ├────────────────────────────────────────────────────────────────────────┤
-│ 1. Abrir la terminal (cmd, PowerShell o bash) y ejecutar:              │
+│ 1. Abrir la terminal (bash) en Linux Mint y ejecutar:                  │
 │    java -version                                                       │
-│    (Comprobar si el equipo del aula tiene Java instalado)              │
+│    (comprobar si el equipo del aula tiene Java instalado)              │
 │                                                                        │
-│ 2. Acceder a https://github.com:                                       │
+│ 2. Acceder a GitHub estudiante*:                                       │
 │    Crear cuenta personal de estudiante o verificar credenciales.       │
 │                                                                        │
-│ 3. Si no está instalado, descargar instaladores:                       │
-│    • OpenJDK 21 (LTS)                                                  │
+│ 3. Descargar instaladores:                                             │                                                  │
 │    • IntelliJ IDEA Community Edition                                   │
+│    • PseInt                                                            │
 └────────────────────────────────────────────────────────────────────────┘
 ```
+*https://docs.github.com/es/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student
 
 > 🎙️ **Nota.** El profesor irá por el aula resolviendo dudas de cuentas de GitHub, comprobando versiones de Java y ayudando en las descargas.
 

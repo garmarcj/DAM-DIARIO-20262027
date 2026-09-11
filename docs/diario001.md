@@ -95,6 +95,9 @@ azahartech/
 
 > 💡 **Conclusión.** Un ordenador no interpreta intenciones; solo ejecuta instrucciones exactas sobre datos. Un algoritmo debe ser **preciso, ordenado y no ambiguo**.
 
+
+Exact Instructions Challenge - video de Josh Darnit
+https://www.youtube.com/watch?v=FN2RM-CHkuI
 ---
 
 ### 2. El modelo universal de la informática: IPO (10 min)
@@ -114,9 +117,6 @@ Todo sistema informático responde a este esquema de tres fases consecutivas:
     * *Entrada:* DNI del alumno + hora de lectura del QR.
     * *Procesamiento:* comprobar si la hora es posterior a las 08:05 h y calcular los minutos de retraso.
     * *Salida:* mensaje en pantalla («Puntual» en verde o «Retraso» en naranja) + registro en la base de datos.
-
-Exact Instructions Challenge - video de Josh Darnit
-https://www.youtube.com/watch?v=FN2RM-CHkuI
 
 ---
 
