@@ -7,7 +7,7 @@ layout: page
 ---
 
 # 🚀 BIENVENIDA A AZAHARTECH
-## 1.º DAM — Curso Académico 2026/2027
+## 1.º DAM — Curso académico 2026/2027
 **Módulo:** Programación (PR)  
 **Fecha:** Jueves, 10 de septiembre de 2026  
 **Duración:** 2 horas lectivas (100 min)
@@ -74,7 +74,7 @@ azahartech/
 
 ---
 
-## ⚙️ Sesión 2. Pensamiento computacioanl y modelo IPO
+## ⚙️ Sesión 2. Pensamiento computacional y modelo IPO
 
 ### 1. Actividad 2. «El robot ciego» (20 min)
 *Dinámica por parejas para experimentar qué es un algoritmo y por qué ocurren los errores de programación.*

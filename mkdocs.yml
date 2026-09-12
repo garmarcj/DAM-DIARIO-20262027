@@ -20,6 +20,11 @@ nav:
   - Presentación: index.md
   - Dia 1: diario001.md
   - Día 2: diario002.md
+  - Día 3: diario003.md
+  - Dia 4: diario004.md
+  - Día 5: diario005.md
+  - Día 6: diario006.md
+  - Día 7: diario007.md
 markdown_extensions:
   - attr_list
   - admonition

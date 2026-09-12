@@ -33,12 +33,12 @@ layout: page
 ### 2. Publicación oficial de los equipos de AzaharTech (10 min)
 *Equipos equilibrados y heterogéneos confeccionados a partir del cuestionario de diagnóstico de ayer.*
 
-| Equipo de trabajo | Integrantes asignados | Identificador Git oficial |
-| :--- | :--- | :---: |
-| **Equipo 01** | [Estudiante 1] · [Estudiante 2] · [Estudiante 3] · [Estudiante 4] | `equipo-01` |
-| **Equipo 02** | [Estudiante 5] · [Estudiante 6] · [Estudiante 7] · [Estudiante 8] | `equipo-02` |
-| **Equipo 03** | [Estudiante 9] · [Estudiante 10] · [Estudiante 11] · [Estudiante 12] | `equipo-03` |
-| **Equipo 04** | [Estudiante 13] · [Estudiante 14] · [Estudiante 15] · [Estudiante 16] | `equipo-04` |
+| Equipo de trabajo | Integrantes asignados                                                 | Identificador Git oficial |
+|:------------------|:----------------------------------------------------------------------|:-------------------------:|
+| **Equipo 01**     | [Estudiante 1] · [Estudiante 2] · [Estudiante 3] · [Estudiante 4]     |        `equipo-01`        |
+| **Equipo 02**     | [Estudiante 5] · [Estudiante 6] · [Estudiante 7] · [Estudiante 8]     |        `equipo-02`        |
+| **Equipo 03**     | [Estudiante 9] · [Estudiante 10] · [Estudiante 11] · [Estudiante 12]  |        `equipo-03`        |
+| **Equipo 04**     | [Estudiante 13] · [Estudiante 14] · [Estudiante 15] · [Estudiante 16] |        `equipo-04`        |
 
 > 🎙️ **Nota.** Al proyectar la lista de equipos, resolveremos incidencias puntuales y confirmaremos que todo el grupo conoce su identificador.
 
