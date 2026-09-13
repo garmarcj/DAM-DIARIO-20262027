@@ -45,11 +45,11 @@ layout: page
       
       Escribir "ID del terminal:"
       Leer terminalId
-      Escribir "Temperatura sensor (C):"
+      Escribir "Temperatura sensor (ºC):"
       Leer tempVestibulo
       
       Escribir "Terminal configurado: #", terminalId
-      Escribir "Sensor termico: ", tempVestibulo, " C"
+      Escribir "Sensor termico: ", tempVestibulo, " ºC"
   FinAlgoritmo
   ```
 * **Java (`pr/src/ControlAccesoQR.java` - v0.1):**

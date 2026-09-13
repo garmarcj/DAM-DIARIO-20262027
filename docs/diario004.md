@@ -46,17 +46,16 @@ layout: page
 * **PSeInt (`pr/pseudocodigo/ControlAccesoQR.psc` - v0.2):**
   ```psc
   Algoritmo ControlAccesoQR
-      // Variables de terminal (Día 1)
       Definir terminalId Como Entero
       Definir tempVestibulo Como Real
       
-      // Variables de identidad (Día 2)
       Definir nombrePersona, dniPersona Como Cadena
       Definir perfilPersona Como Caracter
       Definir esEntrada Como Logico
       
-      Escribir "ID Terminal y temperatura sensor:"
+      Escribir "ID del terminal:"
       Leer terminalId
+      Escribir "Temperatura del sensor (ºC):"
       Leer tempVestibulo
       
       Escribir "DNI de la persona:"
@@ -68,10 +67,10 @@ layout: page
       
       esEntrada <- Verdadero
       
-      Escribir "---------------------------------------------"
-      Escribir "Terminal:   #", terminalId, " (Sensor: ", tempVestibulo, " C)"
+      Escribir "Terminal configurado: #", terminalId
+      Escribir "Sensor termico: ", tempVestibulo, " ºC"
       Escribir "Persona: ", nombrePersona, " (DNI: ", dniPersona, ")"
-      Escribir "Perfil:      ", perfilPersona
+      Escribir "Perfil: ", perfilPersona
       Escribir "Sentido del paso:  Entrada (", esEntrada, ")"
   FinAlgoritmo
   ```
@@ -87,35 +86,33 @@ layout: page
           int terminalId;
           double tempVestibulo;
           
-          // Variables de identidad incorporadas en v0.2
           String dniPersona;
           String nombrePersona;
           char perfilPersona;
           boolean esEntrada;
           
-          System.out.print("ID Terminal: ");
+          System.out.print("ID del terminal: ");
           terminalId = teclado.nextInt();
           
-          System.out.print("Temperatura sensor (ºC): ");
+          System.out.print("Temperatura del sensor (ºC): ");
           tempVestibulo = teclado.nextDouble();
+          teclado.nextLine();
           
-          teclado.nextLine(); // Limpieza obligatoria del buffer
-          
-          System.out.print("DNI: ");
+          System.out.print("DNI de la persona: ");
           dniPersona = teclado.nextLine();
           
           System.out.print("Nombre completo: ");
           nombrePersona = teclado.nextLine();
           
-          System.out.print("Perfil de acceso (letra): ");
-          perfilPersona = teclado.next().charAt(0); // Captura el primer carácter
+          System.out.print("Perfil de acceso (E = Estudiante, D = Docente, V = Visita):");
+          perfilPersona = teclado.next().charAt(0);
           
           esEntrada = true;
-          
-          System.out.println("---------------------------------------------");
-          System.out.println("Terminal:   #" + terminalId + " (Sensor: " + tempVestibulo + " ºC)");
+
+          System.out.println("Terminal configurado: #" + terminalId);
+          System.out.println("Sensor termico: " + tempVestibulo + " ºC)");
           System.out.println("Persona: " + nombrePersona + " (DNI: " + dniPersona + ")");
-          System.out.println("Perfil:      " + perfilPersona + " DAM");
+          System.out.println("Perfil: " + perfilPersona);
           System.out.println("Sentido del paso:  Entrada (" + esEntrada + ")");
           
           teclado.close();

@@ -29,7 +29,7 @@ layout: page
   * Nombres autoexplicativos: evitar variables de una sola letra como `h`, `m` o `t`.
 * **Indentación y formateo automático en el IDE:**
   * En Java el estándar son 4 espacios por cada bloque anidado dentro de llaves `{ }`.
-  * Atajo universal de IntelliJ IDEA: **`Ctrl + Alt + L`** (en Windows/Linux) o **`Cmd + Option + L`** (en macOS). Reorganiza y alinea todo el archivo al instante.
+  * Atajo universal de IntelliJ IDEA: **`Ctrl + Alt + L`** (en GNU/Linux). Reorganiza y alinea todo el archivo al instante.
 * **Gestión de recursos:**
   * La clase `Scanner` abre un flujo de lectura del sistema operativo. Al terminar de usarlo en el `main`, debe cerrarse con `teclado.close();` para evitar advertencias de fuga de recursos (*resource leak*).
 * **Comentarios explicativos de línea (`//`):**
@@ -55,7 +55,7 @@ layout: page
    * Cliente: IES El Caminàs (Castellón de la Plana)
    * Consultora: AzaharTech Software Consulting
    * 
-   * Versión 0.3: Captura completa, cálculo de estancia horaria y formato limpio.
+   * Versión 0.3: Captura completa de datos, cálculo de estancia horaria y formato limpio.
    * Módulo: Programación (PR) - Sprint 1 (RA1)
    */
   import java.util.Scanner;
@@ -90,15 +90,14 @@ layout: page
           System.out.println("   AZAHARTECH - TERMINAL DE ACCESO VESTÍBULO     ");
           System.out.println("   Cliente: IES El Caminàs (Curso 2026/2027)     ");
           System.out.println("=================================================");
-          System.out.print("ID Terminal: ");
+          System.out.print("ID del terminal: ");
           terminalId = teclado.nextInt();
 
-          System.out.print("Temperatura sensor (ºC): ");
+          System.out.print("Temperatura del sensor (ºC): ");
           tempVestibulo = teclado.nextDouble();
-
           teclado.nextLine(); // Limpieza obligatoria del buffer de entrada
 
-          System.out.print("DNI: ");
+          System.out.print("DNI de la persona: ");
           dniPersona = teclado.nextLine();
 
           System.out.print("Nombre completo: ");
@@ -121,7 +120,7 @@ layout: page
           System.out.print("Minuto de salida (0-59): ");
           minutoSalida = teclado.nextInt();
 
-          // Conversión de instantes a minutos transcurridos desde medianoche
+          // Conversión a minutos transcurridos
           minutosTotalesEntrada = (horaEntrada * 60) + minutoEntrada;
           minutosTotalesSalida = (horaSalida * 60) + minutoSalida;
 
@@ -131,17 +130,18 @@ layout: page
           // Composición de cadena identificativa del registro
           tokenResumen = dniPersona + "-ESTANCIA-" + minutosEstanciaTotal;
 
-          // Salida estructurada
+          // Salida con formato
           System.out.println("---------------------------------------------");
-          System.out.println("Terminal:   #" + terminalId + " (Sensor: " + tempVestibulo + " ºC)");
-          System.out.println("Persona:    " + nombrePersona + " (DNI: " + dniPersona + ")");
-          System.out.println("Perfil:     " + perfilPersona);
-          System.out.println("Sentido:    Entrada (" + esEntrada + ")");
-          System.out.println("Token:      " + tokenResumen);
-          System.out.println("Horario:    Entrada " + horaEntrada + ":" + minutoEntrada + " | Salida " + horaSalida + ":" + minutoSalida);
+          System.out.println("Terminal configurado:        #" + terminalId);
+          System.out.println("Sensor termico:              " + tempVestibulo + " ºC)");
+          System.out.println("Persona:                     " + nombrePersona + " (DNI: " + dniPersona + ")");
+          System.out.println("Perfil:                      " + perfilPersona);
+          System.out.println("Sentido del paso:            Entrada (" + esEntrada + ")");
+          System.out.println("Token:                       " + tokenResumen);
+          System.out.println("Horario:                     Entrada " + horaEntrada + ":" + minutoEntrada + " | Salida " + horaSalida + ":" + minutoSalida);
           System.out.println("Permanencia total en centro: " + minutosEstanciaTotal + " minutos.");
-
-          // Cierre preventivo del recurso para evitar advertencias del compilador
+    
+          // Cierre del recurso para evitar advertencias del compilador
           teclado.close();
       }
   }
@@ -169,7 +169,7 @@ layout: page
     1. Revisa que el algoritmo de PSeInt y el código Java de la versión v0.3 son equivalentes.
     2. Añade comentarios explicativos en la cabecera y en las operaciones de cálculo.
     3. Ejecuta dos pruebas consecutivas en consola con datos reales de su temática para confirmar que la salida no presenta errores.
-* **Subida visual a GitHub desde la interfaz de IntelliJ (sin terminal):**
+* **Subida a GitHub desde la interfaz de IntelliJ:**
     1. Pulsa el atajo **`Ctrl + K`** (o haz clic en el icono verde de verificación **Commit** en la barra lateral izquierda).
     2. En el panel de Commit, marca las casillas de los archivos modificados dentro de `pr/` (`MiProyecto.java` y `MiProyecto.psc`).
     3. En la caja de texto para el mensaje, escribe siguiendo el estándar convencional:  

@@ -53,16 +53,13 @@ layout: page
 * **PSeInt (`pr/pseudocodigo/ControlAccesoQR.psc` - v0.3):**
   ```psc
   Algoritmo ControlAccesoQR
-      // Variables de terminal (Día 1)
       Definir terminalId Como Entero
       Definir tempVestibulo Como Real
       
-      // Variables de identidad (Día 2)
       Definir nombrePersona, dniPersona Como Cadena
       Definir perfilPersona Como Caracter
       Definir esEntrada Como Logico
       
-      // Variables de registro horario y cálculo de estancia (Día 3)
       Definir horaEntrada, minutoEntrada Como Entero
       Definir horaSalida, minutoSalida Como Entero
       Definir minutosTotalesEntrada Como Entero
@@ -70,8 +67,9 @@ layout: page
       Definir minutosEstanciaTotal Como Entero
       Definir tokenResumen Como Cadena
       
-      Escribir "ID Terminal y temperatura sensor:"
+      Escribir "ID del terminal:"
       Leer terminalId
+      Escribir "Temperatura del sensor (ºC):"
       Leer tempVestibulo
       
       Escribir "DNI de la persona:"
@@ -83,27 +81,25 @@ layout: page
       
       esEntrada <- Verdadero
       
-      Escribir "Introduce hora y minuto de entrada (ej. 8 y 15):"
+      Escribir "Introduce hora y minuto de entrada (por ejemplo, 8 15):"
       Leer horaEntrada
       Leer minutoEntrada
       
-      Escribir "Introduce hora y minuto de salida (ej. 14 y 10):"
+      Escribir "Introduce hora y minuto de salida (por ejemplo, 14 10):"
       Leer horaSalida
       Leer minutoSalida
       
-      // Procesamiento aritmético secuencial
       minutosTotalesEntrada <- (horaEntrada * 60) + minutoEntrada
       minutosTotalesSalida <- (horaSalida * 60) + minutoSalida
       minutosEstanciaTotal <- minutosTotalesSalida - minutosTotalesEntrada
       
-      // Composición de cadena
       tokenResumen <- dniPersona + "-ESTANCIA-" + ConvertirATexto(minutosEstanciaTotal)
       
-      Escribir "---------------------------------------------"
-      Escribir "Terminal:   #", terminalId, " (Sensor: ", tempVestibulo, " C)"
-      Escribir "Persona:    ", nombrePersona, " (DNI: ", dniPersona, ")"
-      Escribir "Perfil:     ", perfilPersona
-      Escribir "Sentido:    Entrada (", esEntrada, ")"
+      Escribir "Terminal configurado: #", terminalId
+      Escribir "Sensor termico: ", tempVestibulo, " ºC"
+      Escribir "Persona: ", nombrePersona, " (DNI: ", dniPersona, ")"
+      Escribir "Perfil: ", perfilPersona
+      Escribir "Sentido del paso:  Entrada (", esEntrada, ")"
       Escribir "Token:      ", tokenResumen
       Escribir "Horario:    Entrada ", horaEntrada, ":", minutoEntrada, " | Salida ", horaSalida, ":", minutoSalida
       Escribir "Permanencia total en centro: ", minutosEstanciaTotal, " minutos."
@@ -126,7 +122,6 @@ layout: page
           char perfilPersona;
           boolean esEntrada;
           
-          // Variables de cálculo temporal incorporadas en v0.3
           int horaEntrada;
           int minutoEntrada;
           int horaSalida;
@@ -136,21 +131,20 @@ layout: page
           int minutosEstanciaTotal;
           String tokenResumen;
           
-          System.out.print("ID Terminal: ");
+          System.out.print("ID del terminal: ");
           terminalId = teclado.nextInt();
           
-          System.out.print("Temperatura sensor (ºC): ");
+          System.out.print("Temperatura del sensor (ºC): ");
           tempVestibulo = teclado.nextDouble();
+          teclado.nextLine();
           
-          teclado.nextLine(); // Limpieza obligatoria del buffer
-          
-          System.out.print("DNI: ");
+          System.out.print("DNI de la persona: ");
           dniPersona = teclado.nextLine();
           
           System.out.print("Nombre completo: ");
           nombrePersona = teclado.nextLine();
           
-          System.out.print("Perfil de acceso (letra): ");
+          System.out.print("Perfil de acceso (E = Estudiante, D = Docente, V = Visita):");
           perfilPersona = teclado.next().charAt(0);
           
           esEntrada = true;
@@ -167,22 +161,19 @@ layout: page
           System.out.print("Minuto de salida (0-59): ");
           minutoSalida = teclado.nextInt();
           
-          // Procesamiento aritmético secuencial
           minutosTotalesEntrada = (horaEntrada * 60) + minutoEntrada;
           minutosTotalesSalida = (horaSalida * 60) + minutoSalida;
           minutosEstanciaTotal = minutosTotalesSalida - minutosTotalesEntrada;
           
           tokenResumen = dniPersona + "-ESTANCIA-" + minutosEstanciaTotal;
           
-          System.out.println("---------------------------------------------");
-          System.out.println("Terminal:   #" + terminalId + " (Sensor: " + tempVestibulo + " ºC)");
-          System.out.println("Persona:    " + nombrePersona + " (DNI: " + dniPersona + ")");
-          System.out.println("Perfil:     " + perfilPersona);
-          System.out.println("Sentido:    Entrada (" + esEntrada + ")");
-          System.out.println("Token:      " + tokenResumen);
+          System.out.println("Terminal configurado: #" + terminalId);
+          System.out.println("Sensor termico: " + tempVestibulo + " ºC)");
+          System.out.println("Persona: " + nombrePersona + " (DNI: " + dniPersona + ")");
+          System.out.println("Perfil: " + perfilPersona);
+          System.out.println("Sentido del paso:  Entrada (" + esEntrada + ")");
+          System.out.println("Token: " + tokenResumen);
           System.out.println("Horario:    Entrada " + horaEntrada + ":" + minutoEntrada + " | Salida " + horaSalida + ":" + minutoSalida);
-          // Uso de paréntesis protectores para forzar el cálculo antes de concatenar:
-          System.out.println("Minutos entrada desde medianoche: " + ((horaEntrada * 60) + minutoEntrada) + " min.");
           System.out.println("Permanencia total en centro: " + minutosEstanciaTotal + " minutos.");
           
           teclado.close();
