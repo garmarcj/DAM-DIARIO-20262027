@@ -19,7 +19,7 @@ layout: page
 
 ### 1. Contexto profesional en AzaharTech (5 min)
 * Arranque del caso guía: sistema de control de acceso por QR para el **IES El Caminàs**.
-* Laia Claramunt presenta el reto del día: el terminal debe capturar y registrar en la memoria RAM su número y la lectura térmica del vestíbulo.
+* Laia Claramunt presenta el reto del día: el terminal debe capturar y registrar en la memoria RAM su identificador y la lectura térmica del vestíbulo.
 
 ### 2. Micro-exposición docente (10 min)
 * Qué es un algoritmo: secuencia ordenada Entrada $\rightarrow$ Proceso $\rightarrow$ Salida (modelo IPO).
@@ -45,11 +45,11 @@ layout: page
       
       Escribir "ID del terminal:"
       Leer terminalId
-      Escribir "Temperatura sensor (ºC):"
+      Escribir "Temperatura del sensor (ºC):"
       Leer tempVestibulo
       
       Escribir "Terminal configurado: #", terminalId
-      Escribir "Sensor termico: ", tempVestibulo, " ºC"
+      Escribir "Lectura térmica: ", tempVestibulo, " ºC"
   FinAlgoritmo
   ```
 * **Java (`pr/src/ControlAccesoQR.java` - v0.1):**
@@ -66,11 +66,11 @@ layout: page
           System.out.print("ID del terminal: ");
           terminalId = teclado.nextInt();
           
-          System.out.print("Temperatura sensor (ºC): ");
+          System.out.print("Temperatura del sensor (ºC): ");
           tempVestibulo = teclado.nextDouble();
           
           System.out.println("Terminal configurado: #" + terminalId);
-          System.out.println("Sensor térmico: " + tempVestibulo + " ºC");
+          System.out.println("Lectura térmica: " + tempVestibulo + " ºC");
           
           teclado.close();
       }
