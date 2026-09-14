@@ -19,7 +19,7 @@ layout: page
 
 ### 1. Contexto profesional en AzaharTech (5 min)
 * Arranque del caso guía: sistema de control de acceso por QR para el **IES El Caminàs**.
-* Laia Claramunt presenta el reto del día: el terminal debe capturar y registrar en la memoria RAM el número de aula y la lectura térmica del vestíbulo.
+* Laia Claramunt presenta el reto del día: el terminal debe capturar y registrar en la memoria RAM su número y la lectura térmica del vestíbulo.
 
 ### 2. Micro-exposición docente (10 min)
 * Qué es un algoritmo: secuencia ordenada Entrada $\rightarrow$ Proceso $\rightarrow$ Salida (modelo IPO).
@@ -89,7 +89,7 @@ layout: page
 * El docente explica cómo extrapolar las variables numéricas a los proyectos de la bolsa (por ejemplo: horas de cómputo en *Cotizador cloud*, segundos de reacción en *Simulador de phishing*, masa/radio en *Simulador de físicas 2D*).
 
 ### 2. Trabajo del estudiante en el proyecto propio (35 min)
-* Cada estudiante crea en su espacio personal (`azahartech/equipo-XX/nombre-alumno/pr/`):
+* Cada estudiante crea en su espacio personal (`azahartech/nombre-equipo/apellidos-nombre/pr/`):
     1. `pr/pseudocodigo/MiProyecto.psc` (versión v0.1).
     2. `pr/src/MiProyecto.java` (versión v0.1).
 * Declara al menos una variable `int` y una variable `double` representativas de su proyecto.
@@ -100,7 +100,7 @@ layout: page
 * Comprobación en consola de que el código compila y ejecuta sin errores (`Ctrl + Shift + F10`).
 
 ## 🧭 Sesión 3. ED - Sistema de información y ciclo de vida del software (SDLC)
-*Balance de tiempo:* **Docente: 15 min | Alumno activo: 35 min**
+*Balance de tiempo:* **Docente: 15 min | Estudiante: 35 min**
 
 ### 1. Micro-exposición docente (15 min)
 * **Programa vs. Sistema de información:** Un programa es solo una pieza; un Sistema de Información (SI) articula 5 componentes: Hardware, Software, Datos, Personas y Procesos.
@@ -154,7 +154,6 @@ layout: page
     2. Abre **IntelliJ IDEA Community Edition**:
         * Configura la codificación global del proyecto en `UTF-8` (*Settings -> File Encodings*).
         * Asocia el SDK oficial a **OpenJDK 21**.
-        * Instala el plugin de análisis de código **SonarLint** (*Settings -> Plugins*).
     3. Abre el archivo de tu proyecto y verifica que compila y ejecuta en la consola integrada.
     4. Realiza una captura completa de pantalla mostrando IntelliJ, el código y la terminal con `java --version`.
     5. Guarda la imagen con el nombre exacto **`entorno.png`** en su carpeta temporal (se moverá a su ruta definitiva en la sesión de Git).
