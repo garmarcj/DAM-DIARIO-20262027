@@ -1,0 +1,889 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Cristian Garcia">
+      
+      
+        <link rel="canonical" href="https://garmarcj.github.io/DAM-DIARIO-20262027/diario006.html">
+      
+      
+        <link rel="prev" href="diario005.html">
+      
+      
+        <link rel="next" href="diario007.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Jueves 17 de septiembre de 2026 - Buenas prácticas de código y consolidación v0.3 - Diario</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#diario-de-clase-jueves-17-de-septiembre-de-2026" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Diario" class="md-header__button md-logo" aria-label="Diario" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Diario
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Jueves 17 de septiembre de 2026 - Buenas prácticas de código y consolidación v0.3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Diario" class="md-nav__button md-logo" aria-label="Diario" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Diario
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presentación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="diario001.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dia 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="diario002.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Día 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="diario003.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Día 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="diario004.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dia 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="diario005.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Día 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Día 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="diario006.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Día 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1o-dam-curso-academico-20262027" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.º DAM — Curso académico 2026/2027
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-1-estandares-de-calidad-de-codigo-autoformateo-e-inspeccion-en-intellij" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 Sesión 1. Estándares de calidad de código, autoformateo e inspección en IntelliJ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧭 Sesión 1. Estándares de calidad de código, autoformateo e inspección en IntelliJ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-contexto-profesional-en-azahartech-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Contexto profesional en AzaharTech (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-micro-exposicion-docente-limpieza-indentacion-y-comentarios-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Micro-exposición docente: Limpieza, indentación y comentarios (10 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-taller-guiado-refactorizacion-y-pulido-de-controlaccesoqr-v03-25-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Taller guiado: Refactorización y pulido de ControlAccesoQR v0.3 (25 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-dinamica-de-inspeccion-de-codigo-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Dinámica de inspección de código (10 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sesion-2-consolidacion-y-versionado-visual-del-proyecto-propio-v03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ Sesión 2. Consolidación y versionado visual del proyecto propio (v0.3)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Sesión 2. Consolidación y versionado visual del proyecto propio (v0.3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pautas-tecnicas-de-auditoria-antes-del-guardado-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Pautas técnicas de auditoría antes del guardado (10 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-trabajo-autonomo-en-puesto-individual-35-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Trabajo autónomo en puesto individual (35 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cierre-y-verificacion-en-github-5-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Cierre y verificación en GitHub (5 min)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estado-al-cierre-de-la-jornada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Estado al cierre de la jornada
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="diario007.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Día 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="diario-de-clase-jueves-17-de-septiembre-de-2026">🚀 Diario de clase: jueves, 17 de septiembre de 2026<a class="headerlink" href="#diario-de-clase-jueves-17-de-septiembre-de-2026" title="Permanent link">&para;</a></h1>
+<h2 id="1o-dam-curso-academico-20262027">1.º DAM — Curso académico 2026/2027<a class="headerlink" href="#1o-dam-curso-academico-20262027" title="Permanent link">&para;</a></h2>
+<p><strong>Módulo del día:</strong> Programación (PR)<br />
+<strong>Fecha:</strong> Jueves, 17 de septiembre de 2026<br />
+<strong>Duración:</strong> 2 horas lectivas (100 min)</p>
+<hr />
+<h2 id="sesion-1-estandares-de-calidad-de-codigo-autoformateo-e-inspeccion-en-intellij">🧭 Sesión 1. Estándares de calidad de código, autoformateo e inspección en IntelliJ<a class="headerlink" href="#sesion-1-estandares-de-calidad-de-codigo-autoformateo-e-inspeccion-en-intellij" title="Permanent link">&para;</a></h2>
+<p><em>Balance de tiempo:</em> <strong>Docente: 15 min | Estudiante: 35 min</strong></p>
+<h3 id="1-contexto-profesional-en-azahartech-5-min">1. Contexto profesional en AzaharTech (5 min)<a class="headerlink" href="#1-contexto-profesional-en-azahartech-5-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Alba Torres y Laia Claramunt revisan en el proyector el código de <code>ControlAccesoQR.java</code> alcanzado ayer (versión v0.3).</li>
+<li>El motor de cálculo de estancia funciona a la perfección, pero Laia señala detalles visuales: líneas desalineadas, llaves en posiciones inconsistentes y una advertencia amarilla en el editor sobre el objeto <code>Scanner</code> abierto.</li>
+<li>Alba recuerda al equipo: <em>«En AzaharTech no basta con que el código funcione; el código debe ser legible, seguir las convenciones oficiales de Java y quedar impecablemente estructurado antes de enviarlo al repositorio»</em>.</li>
+</ul>
+<h3 id="2-micro-exposicion-docente-limpieza-indentacion-y-comentarios-10-min">2. Micro-exposición docente: Limpieza, indentación y comentarios (10 min)<a class="headerlink" href="#2-micro-exposicion-docente-limpieza-indentacion-y-comentarios-10-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Convenciones de nomenclatura oficiales:</strong></li>
+<li><em>PascalCase</em> para clases (<code>ControlAccesoQR</code>, <code>MiProyecto</code>).</li>
+<li><em>camelCase</em> para variables y métodos (<code>minutosEstanciaTotal</code>, <code>horaEntrada</code>).</li>
+<li>Nombres autoexplicativos: evitar variables de una sola letra como <code>h</code>, <code>m</code> o <code>t</code>.</li>
+<li><strong>Indentación y formateo automático en el IDE:</strong></li>
+<li>En Java el estándar son 4 espacios por cada bloque anidado dentro de llaves <code>{ }</code>.</li>
+<li>Atajo universal de IntelliJ IDEA: <strong><code>Ctrl + Alt + L</code></strong> (en GNU/Linux). Reorganiza y alinea todo el archivo al instante.</li>
+<li><strong>Gestión de recursos:</strong></li>
+<li>La clase <code>Scanner</code> abre un flujo de lectura del sistema operativo. Al terminar de usarlo en el <code>main</code>, debe cerrarse con <code>teclado.close();</code> para evitar advertencias de fuga de recursos (<em>resource leak</em>).</li>
+<li><strong>Comentarios explicativos de línea (<code>//</code>):</strong></li>
+<li>Se usan para explicar el <em>porqué</em> de una fórmula o decisión técnica, no para describir lo que ya es evidente.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>┌────────────────────────────────────────────────────────────────────────┐
+│                   ESTÁNDARES DE LIMPIEZA EN INTELLIJ                   │
+├──────────────────────────────────┬─────────────────────────────────────┤
+│ Ctrl + Alt + L                   │ Autoformatear e indentar el código  │
+│ Barra lateral derecha (icono)    │ Visto verde: «No problems found»    │
+│ teclado.close();                 │ Cierre formal del canal de lectura  │
+└──────────────────────────────────┴─────────────────────────────────────┘
+</code></pre></div>
+<h3 id="3-taller-guiado-refactorizacion-y-pulido-de-controlaccesoqr-v03-25-min">3. Taller guiado: Refactorización y pulido de <code>ControlAccesoQR v0.3</code> (25 min)<a class="headerlink" href="#3-taller-guiado-refactorizacion-y-pulido-de-controlaccesoqr-v03-25-min" title="Permanent link">&para;</a></h3>
+<p><em>Los estudiantes abren su archivo <code>ControlAccesoQR.java</code>, aplican las herramientas de formateo y añaden comentarios técnicos explicativos:</em></p>
+<ul>
+<li><strong>Java (<code>pr/src/ControlAccesoQR.java</code> - v0.3 consolidada):</strong>
+  <div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * SISTEMA DE CONTROL DE ASISTENCIA POR CÓDIGO QR</span>
+<span class="cm"> * Cliente: IES El Caminàs (Castellón de la Plana)</span>
+<span class="cm"> * Consultora: AzaharTech Software Consulting</span>
+<span class="cm"> * </span>
+<span class="cm"> * Versión 0.3: Captura completa de datos, cálculo de estancia horaria y formato limpio.</span>
+<span class="cm"> * Módulo: Programación (PR) - Sprint 1 (RA1)</span>
+<span class="cm"> */</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ControlAccesoQR</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Canal de lectura de la entrada estándar</span>
+<span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">teclado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// 1. Variables del terminal físico (Día 1)</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">terminalId</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">tempVestibulo</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// 2. Variables de identidad del usuario (Día 2)</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">dniPersona</span><span class="p">;</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">nombrePersona</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">char</span><span class="w"> </span><span class="n">perfilPersona</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">boolean</span><span class="w"> </span><span class="n">esEntrada</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// 3. Variables de registro horario y estancia (Día 3)</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">horaEntrada</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">minutoEntrada</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">horaSalida</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">minutoSalida</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">minutosTotalesEntrada</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">minutosTotalesSalida</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">minutosEstanciaTotal</span><span class="p">;</span>
+<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">tokenResumen</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Entrada de datos del hardware y usuario</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"================================================="</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"   AZAHARTECH - TERMINAL DE ACCESO VESTÍBULO     "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"   Cliente: IES El Caminàs (Curso 2026/2027)     "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"================================================="</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"ID del terminal: "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">terminalId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Temperatura del sensor (ºC): "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tempVestibulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
+<span class="w">        </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="w"> </span><span class="c1">// Limpieza obligatoria del buffer de entrada</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"DNI de la persona: "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">dniPersona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Nombre completo: "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">nombrePersona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Perfil de acceso (E = Estudiante, D = Docente, V = Visita): "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">perfilPersona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">next</span><span class="p">().</span><span class="na">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">esEntrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Hora de entrada (0-23): "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">horaEntrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Minuto de entrada (0-59): "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">minutoEntrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Hora de salida (0-23): "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">horaSalida</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Minuto de salida (0-59): "</span><span class="p">);</span>
+<span class="w">        </span><span class="n">minutoSalida</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">teclado</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="w">        </span><span class="c1">// Conversión a minutos transcurridos</span>
+<span class="w">        </span><span class="n">minutosTotalesEntrada</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">horaEntrada</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">60</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutoEntrada</span><span class="p">;</span>
+<span class="w">        </span><span class="n">minutosTotalesSalida</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">horaSalida</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">60</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutoSalida</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Cálculo directo del tiempo total de permanencia en el centro</span>
+<span class="w">        </span><span class="n">minutosEstanciaTotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minutosTotalesSalida</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">minutosTotalesEntrada</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Composición de cadena identificativa del registro</span>
+<span class="w">        </span><span class="n">tokenResumen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dniPersona</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">"-ESTANCIA-"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutosEstanciaTotal</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Salida con formato</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"---------------------------------------------"</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Terminal configurado:        #"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">terminalId</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Sensor termico:              "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tempVestibulo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" ºC)"</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Persona:                     "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nombrePersona</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" (DNI: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dniPersona</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">")"</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Perfil:                      "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">perfilPersona</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Sentido del paso:            Entrada ("</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">esEntrada</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">")"</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Token:                       "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tokenResumen</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Horario:                     Entrada "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">horaEntrada</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">":"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutoEntrada</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" | Salida "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">horaSalida</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">":"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutoSalida</span><span class="p">);</span>
+<span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Permanencia total en centro: "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">minutosEstanciaTotal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">" minutos."</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Cierre del recurso para evitar advertencias del compilador</span>
+<span class="w">        </span><span class="n">teclado</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<h3 id="4-dinamica-de-inspeccion-de-codigo-10-min">4. Dinámica de inspección de código (10 min)<a class="headerlink" href="#4-dinamica-de-inspeccion-de-codigo-10-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cada estudiante pulsa <code>Ctrl + Alt + L</code> en su IntelliJ para observar cómo se reordenan automáticamente los márgenes y operadores.</li>
+<li>Revisan la esquina superior derecha del editor: debe mostrar el icono del visto en verde (<em>«No problems found»</em>), acreditando que no hay advertencias de estilo.</li>
+</ul>
+<hr />
+<h2 id="sesion-2-consolidacion-y-versionado-visual-del-proyecto-propio-v03">⚙️ Sesión 2. Consolidación y versionado visual del proyecto propio (v0.3)<a class="headerlink" href="#sesion-2-consolidacion-y-versionado-visual-del-proyecto-propio-v03" title="Permanent link">&para;</a></h2>
+<p><em>Balance de tiempo:</em> <strong>Docente: 10 min | Estudiante: 40 min</strong></p>
+<h3 id="1-pautas-tecnicas-de-auditoria-antes-del-guardado-10-min">1. Pautas técnicas de auditoría antes del guardado (10 min)<a class="headerlink" href="#1-pautas-tecnicas-de-auditoria-antes-del-guardado-10-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>El docente explica los 4 criterios de aceptación que debe cumplir el archivo <code>MiProyecto.java</code> para dar por superada la primera semana:<ol>
+<li>Compilación limpia sin dependencias rotas.</li>
+<li>Nombres de variables autoexplicativos en <em>camelCase</em>.</li>
+<li>Cálculo secuencial con paréntesis protectores funcionando en consola.</li>
+<li>Código autoformateado y recurso <code>Scanner</code> cerrado.</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-trabajo-autonomo-en-puesto-individual-35-min">2. Trabajo autónomo en puesto individual (35 min)<a class="headerlink" href="#2-trabajo-autonomo-en-puesto-individual-35-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cada estudiante abre su archivo único en IntelliJ (<code>pr/src/MiProyecto.java</code>) y en PSeInt (<code>pr/pseudocodigo/MiProyecto.psc</code>).</li>
+<li>Aplica la auditoría completa sobre su proyecto propio:<ol>
+<li>Revisa que el algoritmo de PSeInt y el código Java de la versión v0.3 son equivalentes.</li>
+<li>Añade comentarios explicativos en la cabecera y en las operaciones de cálculo.</li>
+<li>Ejecuta dos pruebas consecutivas en consola con datos reales de su temática para confirmar que la salida no presenta errores.</li>
+</ol>
+</li>
+<li><strong>Subida a GitHub desde la interfaz de IntelliJ:</strong><ol>
+<li>Pulsa el atajo <strong><code>Ctrl + K</code></strong> (o haz clic en el icono verde de verificación <strong>Commit</strong> en la barra lateral izquierda).</li>
+<li>En el panel de Commit, marca las casillas de los archivos modificados dentro de <code>pr/</code> (<code>MiProyecto.java</code> y <code>MiProyecto.psc</code>).</li>
+<li>En la caja de texto para el mensaje, escribe siguiendo el estándar convencional:<br />
+<code>feat(pr): consolidar version v0.3 con captura de datos, calculos aritmeticos y limpieza de codigo</code></li>
+<li>Despliega el botón azul inferior y selecciona <strong>«Commit and Push»</strong>.</li>
+<li>En la ventana de confirmación que aparece, pulsa <strong>Push</strong> para enviar los cambios a GitHub.</li>
+</ol>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>┌────────────────────────────────────────────────────────────────────────┐
+│               FLUJO DE GUARDADO Y SINCRONIZACIÓN EN INTELLIJ           │
+├────────────────────────────────────────────────────────────────────────┤
+│ 1. Ctrl + K                       ──► Abre el panel visual de Commit.  │
+│ 2. Marcar casillas de pr/         ──► Prepara los archivos (Stage).    │
+│ 3. Escribir mensaje convencional  ──► Describe el cambio realizado.    │
+│ 4. Pulsar «Commit and Push»       ──► Graba en local y sube a GitHub.  │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre></div>
+<h3 id="3-cierre-y-verificacion-en-github-5-min">3. Cierre y verificación en GitHub (5 min)<a class="headerlink" href="#3-cierre-y-verificacion-en-github-5-min" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Comprobación en el navegador web de que la versión v0.3 de <code>MiProyecto.java</code> y su pseudocódigo están visibles y con su commit registrado en el repositorio remoto.</li>
+</ul>
+<hr />
+<h2 id="estado-al-cierre-de-la-jornada">📊 Estado al cierre de la jornada<a class="headerlink" href="#estado-al-cierre-de-la-jornada" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>╔════════════════════════════════════════════════════════════════════════╗
+║                       ESTADO AL CIERRE DEL DÍA                         ║
+╠════════════════════════════════════════════════════════════════════════╣
+║ [ ] Aplicadas las convenciones de estilo oficiales (camelCase/Pascal). ║
+║ [ ] Código autoformateado en IntelliJ mediante Ctrl + Alt + L.         ║
+║ [ ] Resuelto el cierre formal del recurso Scanner con .close().        ║
+║ [ ] Caso guía ControlAccesoQR consolidado en su versión v0.3 limpia.   ║
+║ [ ] Versión v0.3 de MiProyecto.java y pseudocódigo subidos a GitHub.   ║
+╚════════════════════════════════════════════════════════════════════════╝
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.tabs.link", "navigation.instant", "navigation.top", "navigation.sections", "search.highlight", "search.suggest", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
