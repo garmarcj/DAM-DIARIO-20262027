@@ -130,10 +130,11 @@ layout: page
 *Balance de tiempo:* **Docente: 10 min | Estudiante: 40 min**
 
 ### 1. Pautas técnicas de adaptación a los proyectos de la bolsa (10 min)
-* El docente explica cómo trasladar los tipos alfanuméricos a los diferentes retos de software:
-    * En *Simulador de phishing:* remitente del mensaje (`String`), tipo de canal `'E'`, `'S'`, `'R'` (`char`) y si es verificado (`boolean`).
-    * En *Bóveda de contraseñas:* nombre del servicio (`String`), categoría (`char`) y si está caducada (`boolean`).
-    * En *Cotizador cloud:* nombre del cliente (`String`), zona geográfica (`char`) y soporte 24/7 activo (`boolean`).
+* El docente explica cómo trasladar los tipos alfanuméricos (String, char) y booleanos (boolean) a las cuatro temáticas:
+  * En Aventura conversacional: nombre del héroe (String), clase de personaje 'G', 'M', 'P' (char) y si la partida está activa (boolean estaVivo). 
+  * En Motor de recomendación: título de la película/libro (String), tipo de contenido 'P', 'M', 'L' (char) y si está marcado como favorito (boolean esFavorito). 
+  * En Simulador de físicas 2D: etiqueta del cuerpo (String), tipo de partícula 'N', 'P', 'R' (char) y si tiene la gravedad activada (boolean gravedadActiva). 
+  * En Bóveda de contraseñas: nombre del servicio o web (String), nivel de política 'B', 'E', 'C' (char) y si requiere doble factor (boolean requiere2FA).
 
 ### 2. Trabajo autónomo en puesto individual (35 min)
 * Cada estudiante abre su archivo único en IntelliJ (`pr/src/MiProyecto.java`) y en PSeInt (`pr/pseudocodigo/MiProyecto.psc`).

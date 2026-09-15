@@ -86,7 +86,11 @@ layout: page
 *Balance de tiempo:* **Docente: 10 min | Estudiante: 40 min**
 
 ### 1. Pautas técnicas para el proyecto propio (10 min)
-* El docente explica cómo extrapolar las variables numéricas a los proyectos de la bolsa (por ejemplo: horas de cómputo en *Cotizador cloud*, segundos de reacción en *Simulador de phishing*, masa/radio en *Simulador de físicas 2D*).
+* El docente explica cómo extrapolar las variables numéricas a los cuatro proyectos del aula:
+  * En Aventura conversacional: puntos de vida (int puntosVida) y multiplicador de daño (double factorDano). 
+  * En Motor de recomendación: identificador de ítem (int idItem) y valoración media (double valoracionMedia). 
+  * En Simulador de físicas 2D: número de colisiones (int totalColisiones) y masa del cuerpo (double masaKg). 
+  * En Bóveda de contraseñas: días para la caducidad (int diasCaducidad) y porcentaje de fortaleza (double nivelSeguridad).
 
 ### 2. Trabajo del estudiante en el proyecto propio (35 min)
 * Cada estudiante crea en su espacio personal (`azahartech/nombre-equipo/apellidos-nombre/pr/`):

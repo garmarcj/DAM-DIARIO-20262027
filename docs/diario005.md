@@ -192,10 +192,11 @@ layout: page
 *Balance de tiempo:* **Docente: 10 min | Estudiante: 40 min**
 
 ### 1. Pautas técnicas de adaptación a los proyectos de la bolsa (10 min)
-* El docente muestra cómo trasladar la combinación de multiplicación, suma y resta a los proyectos individuales:
-  * En *Cotizador cloud:* multiplicar horas por precio base y restar el cupón de descuento inicial.
-  * En *Simulador de phishing:* multiplicar intentos por tiempo medio y restar bonificaciones por rapidez.
-  * En *Simulador de físicas 2D:* calcular la diferencia de posición restando la posición inicial a la posición final calculada.
+* El docente muestra cómo trasladar la combinación de multiplicación, suma y resta a los cuatro proyectos:
+  * En Aventura conversacional: calcular el daño total (danoBase * factorDano) y restar la vida restante (puntosVida - danoTotal). 
+  * En Motor de recomendación: sumar puntuaciones por afinidad y calcular la diferencia respecto a la media de la comunidad. 
+  * En Simulador de físicas 2D: calcular el desplazamiento lineal restando la posición inicial a la posición final calculada (posFinal - posInicial). 
+  * En Bóveda de contraseñas: calcular los días de vigencia restantes restando los días transcurridos al límite de caducidad (diasCaducidad - diasTranscurridos).
 
 ### 2. Trabajo autónomo en puesto individual (35 min)
 * Cada estudiante abre su archivo único en IntelliJ (`pr/src/MiProyecto.java`) y en PSeInt (`pr/pseudocodigo/MiProyecto.psc`).
