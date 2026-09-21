@@ -34,10 +34,10 @@ Actualización conjunta a `ControlAccesoQR v0.4`. Los estudiantes abren el archi
 
 * Cada estudiante abre los archivos `.psc` y `.java` de su proyecto elegido de la bolsa de proyectos.
 * Aplica la refactorización a la versión `v0.4` utilizando operadores unarios y compuestos:
-  * En **Aventura conversacional**: usar `-=` para reducir puntos de vida o `++` para contar turnos.
-  * En **Motor de recomendación**: usar `+=` para sumar puntuaciones a la afinidad.
-  * En **Simulador de físicas 2D**: usar `+=` para acumular aceleración o distancia.
-  * En **Bóveda de contraseñas**: usar `--` para decrementar días restantes de caducidad.
+    * En **Aventura conversacional**: usar `-=` para reducir puntos de vida o `++` para contar turnos.
+    * En **Motor de recomendación**: usar `+=` para sumar puntuaciones a la afinidad.
+    * En **Simulador de físicas 2D**: usar `+=` para acumular aceleración o distancia.
+    * En **Bóveda de contraseñas**: usar `--` para decrementar días restantes de caducidad.
 * El docente revisa los puestos asegurándose de que nadie duplique nombres de variables en las asignaciones.
 
 ### 2. Cierre de la sesión de programación (5 min)
@@ -57,9 +57,9 @@ Actualización conjunta a `ControlAccesoQR v0.4`. Los estudiantes abren el archi
 
 * Instantáneas frente a diferencias: cómo Git guarda la evolución de los archivos.
 * Los tres estados locales obligatorios por los que pasa un archivo:
-  1. Modificado (*Modified*) — En el *Working Directory*.
-  2. Preparado (*Staged*) — En el *Staging Area*.
-  3. Confirmado (*Committed*) — En el *Local Repository*.
+    1. Modificado (*Modified*) — En el *Working Directory*.
+    2. Preparado (*Staged*) — En el *Staging Area*.
+    3. Confirmado (*Committed*) — En el *Local Repository*.
 
 ### 3. Inspección visual y Conventional Commits (10 min)
 
