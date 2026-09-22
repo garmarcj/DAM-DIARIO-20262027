@@ -64,3 +64,4 @@ Actualización conjunta a `ControlAccesoQR v0.6`. Los estudiantes abren el archi
 ║ [ ] Solucionada la pérdida de precisión al operar con variables int.   ║
 ║ [ ] Evolucionada la versión v0.6 del proyecto propio sin errores.      ║
 ╚════════════════════════════════════════════════════════════════════════╝
+```

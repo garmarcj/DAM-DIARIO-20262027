@@ -65,3 +65,4 @@ Actualización conjunta a `ControlAccesoQR v0.5`. Los estudiantes abren el archi
 ║ [ ] Evolucionada la versión v0.5 del proyecto propio sin errores.      ║
 ║ [ ] Lógica matemática actualizada en los diagramas de PSeInt.          ║
 ╚════════════════════════════════════════════════════════════════════════╝
+```

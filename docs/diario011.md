@@ -56,3 +56,4 @@ Laia repasa en pantalla los criterios obligatorios de calidad que todo código e
 ║ [ ] Sincronización exitosa con GitHub mediante Commit and Push.        ║
 ║ [ ] Semana 2 concluida con el motor matemático integrado.              ║
 ╚════════════════════════════════════════════════════════════════════════╝
+```

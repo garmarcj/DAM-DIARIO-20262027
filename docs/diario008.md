@@ -97,3 +97,4 @@ Cada estudiante realiza los pasos técnicos directamente sobre el código `v0.4`
 ║ [ ] Entendido y aplicado el estándar de Conventional Commits.          ║
 ║ [ ] Cambios atómicos confirmados y enviados a GitHub (Push).           ║
 ╚════════════════════════════════════════════════════════════════════════╝
+```

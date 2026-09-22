@@ -62,3 +62,4 @@
 ║ [ ] Actualizado el Sprint Backlog 1 con el progreso de la Semana 2.    ║
 ║ [ ] Semana 2 cerrada con sincronización exitosa de toda la doc técnica.║
 ╚════════════════════════════════════════════════════════════════════════╝
+```
