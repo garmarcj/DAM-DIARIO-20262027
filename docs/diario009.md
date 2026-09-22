@@ -60,4 +60,8 @@ Actualización conjunta a `ControlAccesoQR v0.5`. Los estudiantes abren el archi
 ╔════════════════════════════════════════════════════════════════════════╗
 ║                       ESTADO AL CIERRE DEL DÍA                         ║
 ╠════════════════════════════════════════════════════════════════════════╣
-║ [ ] Comprendida la diferencia entre la división ente
+║ [ ] Comprendida la diferencia entre la división entera y el residuo.   ║
+║ [ ] Dominio práctico del operador módulo (%) para conversiones.        ║
+║ [ ] Evolucionada la versión v0.5 del proyecto propio sin errores.      ║
+║ [ ] Lógica matemática actualizada en los diagramas de PSeInt.          ║
+╚════════════════════════════════════════════════════════════════════════╝

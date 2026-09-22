@@ -28,6 +28,8 @@ nav:
   - Día 8: diario008.md
   - Día 9: diario009.md
   - Día 10: diario010.md
+  - Día 11: diario011.md
+  - Día 12: diario012.md
 markdown_extensions:
   - attr_list
   - admonition
