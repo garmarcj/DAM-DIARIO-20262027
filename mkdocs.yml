@@ -30,6 +30,11 @@ nav:
   - Día 10: diario010.md
   - Día 11: diario011.md
   - Día 12: diario012.md
+  - Día 13: diario013.md
+  - Día 14: diario014.md
+  - Día 15: diario015.md
+  - Día 16: diario016.md
+  - Día 17: diario017.md
 markdown_extensions:
   - attr_list
   - admonition
