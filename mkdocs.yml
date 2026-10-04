@@ -1,4 +1,4 @@
-site_name: Diario
+site_name: Diario de aula
 site_url: https://garmarcj.github.io/DAM-DIARIO-20262027/
 site_author: Cristian Garcia
 theme:
@@ -8,16 +8,15 @@ theme:
     scheme: default
     primary: red
   features:
-    - content.code.copy
-    - content.tabs.link
     - navigation.instant
     - navigation.top
     - navigation.sections
     - search.highlight
     - search.suggest
-    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
 nav:
-  - Presentación: index.md
+  - Inicio: index.md
   - Dia 1: diario001.md
   - Día 2: diario002.md
   - Día 3: diario003.md
@@ -35,8 +34,12 @@ nav:
   - Día 15: diario015.md
   - Día 16: diario016.md
   - Día 17: diario017.md
+  - Día 18: diario018.md
+  - Día 19: diario019.md
+  - Día 20: diario020.md
+  - Día 21: diario021.md
+  - Día 22: diario022.md
 markdown_extensions:
-  - attr_list
   - admonition
   - footnotes
   - toc:
@@ -45,6 +48,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - pymdownx.tabbed
-extra_css:
-  - stylesheets/extra.css
-use_directory_urls: false
+plugins:
+  - with-pdf:
+      output_path: pdf/diariodeaula.pdf
+      cover: true
+      toc_title: "diario de aula"
+      exclude_pages:
+        - licencia.md
